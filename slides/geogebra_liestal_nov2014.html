@@ -93,10 +93,10 @@
 - Würfelschnitte, Stochastik, Tabellenkalkulation
 - Dessert
   - Piratenaufgabe
-  - Lineare Algebra (Abbildungen)
+  - Abbildungen (Matrizen)
   - Angry Birds Mathematik
-  - Zentralprojektion
-  - Fermat-Punkt & Parallaxe
+  - Zentralprojektion & Parallaxe
+  - Fermat-Punkt 
 ---
 # Geometrie
 
@@ -142,7 +142,7 @@ Konstruktion von ebenen Figuren, Dreiecke, spezielle Punkte
 
 ![Installation](media/geogebrabrowser.png)
 
-[http://www.geogebra.org/app](http://www.geogebra.org/app)
+[http://web.geogebra.org/app](http://www.geogebra.org/app)
 
 ---
 
@@ -152,7 +152,7 @@ Schülerinnen und Schüler können bestehende Materialien direkt über
 ![tube-geogebra.png](media/tube-geogebra.png)
 
 ---
-### Lernvideos (GeoGebra Channel)
+### Lernvideos 
 
 ![YouTube](media/youtube.png)
 
@@ -179,12 +179,23 @@ Twitter: [@geogebra](https://twitter.com/geogebra)
 ![Funktionslabor](media/Funktionslabor.png)
 
 [Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/317609)
+--
+### Punkt auf Funktion
+1. Beweglicher Punkt auf der x-Achse
+- entsprechender Punkt auf einer Funktion
+
+
+```mathematica
+f(x) =x^2*sin(x^2)
+X_0 =Punkt[y=0]
+P =(x(X_0),f(x(X_0)))
+```
 ---
 # Folgen
 - Zahlenfolgen
 - Folgen von Funktionen
 - Folgen geometrischer Objekte
-- geschachtelte Folgen z.B. Gitter
+- Geschachtelte Folge (Punkte auf Fläche im $\mathbb{R}^3$)
 ---
 ### Zahlenfolgen
 ![Folgen](media/folgen.png)
@@ -262,6 +273,21 @@ Folge[Vieleck[A, B, i], i, 3, 23]
 ![Gitter](media/gitter.png)
 
 [Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/319025)
+--
+### GeoGebra Befehle für ein Gitter
+
+```
+dx = 1
+dy = 1
+x_{Max}=20
+x_{Min}=-20
+y_{Max}=20
+y_{Min}=-20
+Folge[Strecke[(px, y_{Min}), (px, y_{Max})], px, x_{Min}, x_{Max}, dx]
+Folge[Strecke[(x_{Min}, py), (x_{Max}, py)], py, y_{Min}, y_{Max}, dy]
+
+```
+
 
 ---
 # CAS
@@ -288,12 +314,28 @@ Folge[Vieleck[A, B, i], i, 3, 23]
 - Würfelschnitte
 ---
 ### Ein Spat
+
+<video width="802" height="602" data-autoplay loop>
+        <source src="media/movies/spat.m4v" type="video/mp4" />
+        <source src="media/movies/spat.webm" type="video/webm" />
+        Your browser does not support the <code>video</code> element.
+</video>
+
 - [http://tube.geogebra.org/student/m320977](http://tube.geogebra.org/student/m320977)
 ---
 ### Abstand zweier Geraden
+
+![abstandgeraden](media/abstandgeraden.png)
+
 - [http://tube.geogebra.org/student/m320555](http://tube.geogebra.org/student/m320555)
 ---
 ### Würfelschnitte
+<video width="996" height="542" data-autoplay loop>
+        <source src="media/movies/wuerfel.m4v" type="video/mp4" />
+        <source src="media/movies/wuerfel.webm" type="video/webm" />
+        Your browser does not support the <code>video</code> element.
+</video>
+
 - Diagonale Ebene [http://tube.geogebra.org/student/m321009](http://tube.geogebra.org/student/m321009)
 - Beliebige Ebene [http://tube.geogebra.org/student/m321021](http://tube.geogebra.org/student/m321021)
 
@@ -308,7 +350,15 @@ Folge[Vieleck[A, B, i], i, 3, 23]
 - Digoxin [http://tube.geogebra.org/student/m321095](http://tube.geogebra.org/student/m321095)
 - 1000 Zufallszahlen [http://tube.geogebra.org/student/m321107](http://tube.geogebra.org/student/m321107)
 ---
-# Piratenaufgabe
+## Dessert
+- Piratenaufgabe
+- Abbildungen (Matrizen)
+- Angry Birds Mathematik
+- Zentralprojektion & Parallaxe
+- Fermat-Punkt 
+---
+#Piraten-
+#aufgabe
 ---
 ![Piratenaufgabe](media/Piratenaufgabe.png)
 ---
@@ -337,10 +387,8 @@ P = (t,sin(t))
         Your browser does not support the <code>video</code> element.
 </video>
 
-
 ---
----
-# Lineare Algebra (Abbildungen)
+# Abbildungen
 ---
 ## Spiegelung
 
@@ -590,10 +638,8 @@ $$
 
 [Link to GeoGebraTube](http://www.geogebratube.org/material/show/id/144182)
 
-
 ---
----
-# Angry Birds Mathematik
+# Angry Birds Mathe
 ---
 ![Angry Bird](media/angrybird1.png)
 
@@ -995,7 +1041,8 @@ Fermat-Punkt für n>3
 
 ![Fermat-Weber](media/fermatweber7.png)
 
-[Link GeoGebraTube](http://tube.geogebra.org/material/show/id/66688)
+[Link GeoGebraTube](http://tube.geogebra.org/material/show/id/52934)
+
 --
 
 </script>
