@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title>GeoGebra</title>
+
+		<meta name="description" content="TODO">
+		<meta name="author" content="Martin Guggisberg">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="http://mgje.github.io/LinAlg/reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="http://mgje.github.io/LinAlg/reveal/css/theme/mw.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="http://mgje.github.io/LinAlg/reveal/lib/css/github.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="http://mgje.github.io/LinAlg/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="http://mgje.github.io/LinAlg/reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+				
+<!-- Einleitung -->
+<section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
+<script type="text/template">
+### Abbildungen GeoGebra
+<br>
+<p style="background-color:#81BABE">
+![banner](media/banner-geogebra.png)
+</p>
+<br>
+#### 3.12.2014 &nbsp; &nbsp; FD 3.1
+
+<br>
+##### Torsten Linnemann & Martin Guggisberg
+---
+## Agenda
+
+1. Arbeiten mit GeoGebra 
+- Wiederholung Folgen
+- Abbildungen (Matrizen)
+- Angry Birds Mathematik
+- Funktionen, Folgen
+
+---
+### Direkt im Browser arbeiten
+
+![Installation](media/geogebrabrowser.png)
+
+[http://web.geogebra.org/app](http://www.geogebra.org/app)
+
+---
+### Lernvideos 
+
+![YouTube](media/youtube.png)
+
+[YouTube GeoGebra channel](https://www.youtube.com/watch?v=m_v9hKFlOpw)
+
+---
+### Neuigkeiten zu GeoGebra
+
+Twitter: [@geogebra](https://twitter.com/geogebra)
+
+![@geogebra](media/twittergeogebra.png)
+---
+
+### Zahlenfolgen
+![Folgen](media/folgen.png)
+
+[Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/317713)
+--
+#### Fibonacci mit Programm berechnen (JavaScript)
+
+```
+var fibo = function(n){
+
+   var N,i,arr;
+   // Eingabe überprüfen 
+   if (typeof(n) !== "number"){
+      N = 10;
+   } else{
+      N =n-2;
+   }
+  
+  // Fibo Start
+  arr=[1,1];
+  for (i=0;i<N;i++){
+    arr.push(arr[i]+arr[i+1])
+  }
+ //Rückgabe als Liste 
+ return "{"+arr+"}";
+};
+
+```
+---
+### Folge von Funktionen
+
+zum Beispiel
+
+<br>
+
+$
+f_i(x) = \frac{1}{i} \sin(i \cdot x)
+$
+
+$
+f(x) = \sum_{i=1}^N f_i(x)
+$
+
+<br>
+
+```
+N=10
+folgefunkt = Folge[1/i*sin(x*i), i, 1, N]
+reihe = Summe[folgefunkt]
+```
+
+---
+### Folge von Funktionen
+
+![Funktionsfolgen](media/Funktionsfolge.png)
+
+[Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/318219)
+---
+### Folgen geometrischer Objekte
+
+<br>
+
+```
+A=(0,0)
+B=(1,0)
+Folge[Vieleck[A, B, i], i, 3, 23]
+```
+
+---
+![FolgeVielecke](media/folgevielecke.png)
+# Abbildungen
+---
+## Spiegelung
+
+<br>
+
+![Spiegelung](media/L6-Spiegelung.png)
+
+---
+Die Abbildungsmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} -1 & 0  \\\\ 0 & 1 \end{pmatrix}
+$$
+---
+###Abbildung eines Punktes
+
+![Abbildung eines Pukts](media/linabb.png)
+
+[Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/316901)
+
+--
+### Drehung
+
+![Drehung](media/L6-Drehung.png)
+
+--
+#### Darstellung einer Drehung um den Punkt (0,0) gegen den Uhrzeigersinn um \\(90°\\)
+
+Diese lin. Abbildung bildet
+
+<br>
+
+\\(e\_1= \begin{pmatrix}1\\\\0\end{pmatrix}\\) auf \\(\quad e\_1^{\prime}=\begin{pmatrix}0\\\\1\end{pmatrix}\\)
+
+<br>
+
+\\(e\_2=\begin{pmatrix} 0  \\\\ 1 \end{pmatrix}\\) auf \\(\quad e\_2^{\prime}=\begin{pmatrix} -1  \\\\ 0 \end{pmatrix}\\)
+
+<br> 
+
+$$
+A = \begin{pmatrix} 0 & -1  \\\\ 1 & 0 \end{pmatrix}
+$$
+--
+Auch Drehungen sind lineare Abbildungen. Eine Drehung um den Winkel \\(\phi\\) im mathematisch positiven Sinn (gegen den Uhrzeigersinn) kann wie folgt beschrieben werden:
+
+<br>
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (x\cos(\phi)−y\sin(\phi),x\sin(\phi)+y\cos(\phi))
+$$
+<br>
+
+
+--
+#### Drehung Gegenuhrzeigersinn um einen Winkel  \\(\phi\\)
+
+
+\\(e\_1= \begin{pmatrix}1\\\\0\end{pmatrix}\\) auf \\(\quad e\_1^{\prime}=\begin{pmatrix}\cos(\phi)\\\\\sin(\phi)\end{pmatrix}\\)
+
+<br>
+
+\\(e\_2=\begin{pmatrix} 0  \\\\ 1 \end{pmatrix}\\) auf \\(\quad e\_2^{\prime}=\begin{pmatrix} -\sin(\phi) \\\\ \cos(\phi) \end{pmatrix}\\)
+
+<br> 
+
+$$
+A = \begin{pmatrix} \cos(\phi) & -sin(\phi)  \\\\ sin(\phi) & \cos(\phi) \end{pmatrix}
+$$
+
+---
+### Rastergrafik mit linearen Abbildungen transformieren
+
+![lin Abb Rastergrafik](media/linAbbBiber.png)
+
+[Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/316939)
+
+---
+###Projektion
+
+![Projektion](media/L6-Projektion.png)
+
+$$
+\mbox{auf x-Achse} \quad \quad \quad \quad \quad \mbox{auf y-Achse}
+$$
+---
+Die orthogonale Projektion auf die x-Achse ist auch eine lineare Abbildung. Die Zuordnungsvorschrift ist
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (x,0)
+$$
+<br>
+
+Die Abbildungsmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} 1 & 0  \\\\ 0 & 0 \end{pmatrix}
+$$
+
+--
+Die orthogonale Projektion auf die y-Achse ist eine lineare Abbildung. Die Zuordnungsvorschrift ist
+
+$$
+L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
+\quad \quad \quad (x,y) \mapsto (0,y)
+$$
+<br>
+
+Die Abbildungsmatrix ist
+
+<br>
+
+$$
+A = \begin{pmatrix} 0 & 0  \\\\ 0 & 1 \end{pmatrix}
+$$
+
+---
+### Punkt auf eine Gerade a projizieren
+
+
+$$ a: y = -3 x$$
+
+
+<video width="468" height="454" data-autoplay >
+	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/OrtoProj_auf_Gerade.m4v" type="video/mp4" />
+	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/OrtoProj_auf_Gerade.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+---
+### Vorgehen
+* Gesamte Figur drehen bis die Gerade a auf der  x-Achse liegt
+* Den Punkt auf die x-Achse projizieren
+* den projezierten Punkt wieder zurück drehen.
+--- 
+### 1. Schritt Drehen um \\( \alpha \\)
+
+  \\(\tan(\alpha) = -3 \to \alpha \approx -71.57°\\)
+
+<br>
+
+  \\(R_{\alpha} \left( \begin{matrix} x \\\\y \\\\ \end{matrix} \right) = \left( \begin{matrix} \cos (\alpha) & \sin(\alpha)\\\\ - \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right) \\)
+
+<br>
+
+[GeoGebraTube](http://www.geogebratube.org/material/show/id/144454)
+---
+![Schritt1](media/proj_erster_schritt.png)
+---
+### 2. Schritt Projektion auf x-Achse
+
+
+
+  \\(P_{x} \left( \begin{matrix} x \\\\y \\\\ \end{matrix} \right) = \left( \begin{matrix} 1 & 0\\\\ 0 & 0\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y\\\\ \end{matrix} \right) \\)
+
+<br>
+
+[GeoGebraTube](http://www.geogebratube.org/material/show/id/144455)
+
+---
+![Schritt2](media/proj_zweiter_schritt.png)
+---
+### 3. Schritt Rückdrehen um \\( \alpha \\)
+
+ \\( \alpha \approx -71.57°\\)
+
+<br>
+
+  \\(R_{-\alpha}  \left( \begin{matrix} x \\\\y \\\\ \end{matrix} \right) = \left( \begin{matrix} \cos (\alpha) & -\sin(\alpha)\\\\ \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right) \\)
+
+<br>
+
+[GeoGebraTube](http://www.geogebratube.org/material/show/id/144457)
+---
+![Schritt3](media/proj_dritter_schritt.png)
+---
+### In einem Schritt
+
+$$R_{-a} \cdot P_X \cdot R_a \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right)  $$
+
+<br>
+
+\\( \left( \begin{matrix} \cos (\alpha) & \sin(\alpha)\\\\ - \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} 1 & 0\\\\ 0 & 0\\\\ \end{matrix} \right) \left( \begin{matrix} \cos (\alpha) & \sin(\alpha)\\\\ - \sin(\alpha) & \cos(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right) \\)
+
+
+<br>
+
+\\( \left( \begin{matrix} \cos^2 (\alpha) & \cos(\alpha)\sin(\alpha)\\\\ \cos(\alpha)\sin(\alpha) & \sin^2(\alpha)\\\\ \end{matrix} \right) \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right)  \\)
+
+---
+
+### Projektion auf Unterraum verwenden
+
+---
+
+Wähle eine Matrix \\(A\\) so, dass die Spaltenvektoren eine Basis eines Unterraums bilden. (z.B. eine
+	Gerade in \\(\mathbb{R}^2\\)), dann ist die Projektionsmatrix
+
+$$
+proj_w P = A (AA^T)^{-1} A^T P
+$$
+--
+
+$$
+\begin{align}
+\vec{b} &= \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix}\\\\
+b^Tb &= \begin{pmatrix} \cos(\alpha),&\sin(\alpha)\end{pmatrix} \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix}= \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix} \\\\
+   &= \cos(\alpha)^2 + \sin(\alpha)^2 = 1\\\\
+(b^Tb)^{-1} &= 1
+\end{align}
+$$
+--
+
+$$
+\begin{align}
+proj_w P &= A (AA^T)^{-1} A^T P \\\\
+proj_w P &= A A^T P \\\\
+\\\\
+\end{align}
+$$
+
+<br>
+
+mit \\(A A^T\\)
+
+<br>
+
+$$
+\begin{align}
+A A^T &=  \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix} \begin{pmatrix} \cos(\alpha),&\sin(\alpha)\end{pmatrix} \\\\
+  &= \begin{pmatrix} \cos(\alpha)^2 & \sin(\alpha)\cos(\alpha) \\\\ \sin(\alpha)\cos(\alpha) & \sin(\alpha)^2\end{pmatrix} 
+\end{align}
+$$ 
+---
+<video width="796" height="446" data-autoplay >
+	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/ProjGerade.m4v" type="video/mp4" />
+	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/ProjektGerade.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+[Link to GeoGebraTube](http://www.geogebratube.org/material/show/id/144182)
+---
+# Angry Birds Mathe
+---
+![Angry Bird](media/angrybird1.png)
+
+[Link auf Webseite](http://www.teachmathematics.net/page/16049/angry-birds-1)
+---
+![Angry Bird](media/angrybird2.png)
+
+[Link auf Webseite](http://www.teachmathematics.net/page/11419/angry-birds-2)
+---
+# Vielen
+# Dank
+</script>
+</section>
+
+<!-- THE END -->
+			</div>
+
+		</div>
+
+		<script src="http://mgje.github.io/LinAlg/reveal/lib/js/head.min.js"></script>
+		<script src="http://mgje.github.io/LinAlg/reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				keyboard: true,
+				overview: true,
+				slideNumber: true,
+
+				width: 1024,
+    			height: 768,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				//parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal
+				dependencies: [
+					{ src: 'http://mgje.github.io/LinAlg/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'http://mgje.github.io/LinAlg/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://mgje.github.io/LinAlg/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://mgje.github.io/LinAlg/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'http://mgje.github.io/LinAlg/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'http://mgje.github.io/LinAlg/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'http://mgje.github.io/LinAlg/reveal/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
