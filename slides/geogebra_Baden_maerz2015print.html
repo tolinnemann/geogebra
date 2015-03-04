@@ -23,7 +23,7 @@
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" http://mgje.github.io/presentations/reveal2015/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			document.write( '<link rel="stylesheet" href="http://mgje.github.io/LinAlg/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
 		<!--[if lt IE 9]>
@@ -41,6 +41,11 @@
 <!-- Einleitung -->
 <section data-markdown data-separator="---" data-vertical="--" data-background="#FFFFFF">
 <script type="text/template">
+start
+---
+---
+---
+---
 ### Fortbildung GeoGebra
 <br>
 <p style="background-color:#81BABE">
@@ -50,56 +55,45 @@
 #### 5.3.2015 Kanti Baden
 
 <br>
-##### Torsten Linnemann & Martin Guggisberg
+##### Torsten Linnemann 
+##### & Martin Guggisberg
 ---
-<p>
-<div style="float:left">
-![Torsten](media/Torsten-Linnemann.jpg)
-</div>
-<div style="text-align:left">
-&nbsp;Torsten Linnemann<br>
-&nbsp;PH FHNW<br>
-&nbsp;Deutschschweizerische Mathematikkommission<br>
 
-&nbsp;Gymnasium Oberwil<br> 
-&nbsp;tolinnemann@gmail.com<br>
-</div>
-</p>
+![Torsten](media/Torsten-Linnemann2.jpg)
+ 
+ Torsten Linnemann, PH FHNW, 
+ Deutschschweizerische Mathematikkommission
+ 
+ Gymnasium Oberwil
+ tolinnemann@gmail.com
+
 ---
-<p>
-<div style="float:left">
-![Martin](media/Martin-Guggisberg.jpg)
-</div>
-<div style="text-align:left">
-&nbsp;Martin Guggisberg<br>
-&nbsp;SVIA Vorstand<br>
-&nbsp;Ressort Projekte<br>
-<br>
-&nbsp;Departement Mathematik<br>
-&nbsp;und Informatik<br>
-&nbsp;Universität Basel<br>
-&nbsp;martin.guggisberg@unibas.ch
-</div>
-</p>
+
+![Martin](media/Martin-Guggisberg2.jpg)
+ 
+Martin Guggisberg
+ 
+Universität Basel
+martin.guggisberg@unibas.ch
 ---
+
 ### Unsere Motivation
-
 
 * Freude an:
 	* Interaktiver Mathematik
 	* Explorativen Zugängen
 	* Visualisierungen
+
 ---
+
 ## Geogebra Institute 
 
 ### PH FHNW Schweiz
 
 [http://www.geogebra.org/institutes](http://www.geogebra.org/institutes)
 
-
-![media/institutes.png](media/institutes.png)
-
 --- 
+
 ### Befürchtungen eines Kollegen
 
 ### &nbsp;
@@ -107,7 +101,9 @@
 ```
 Trainieren sie (SuS) das Darstellungsvermögen nicht besser, in dem sie versuchen, im eigenen Kopf die verschiedenen Objekte sich vorzustellen? 
 ``` LP aus BL
+
 ---
+
 ### Wie soll GeoGebra 
 
 ### in der Schule 
@@ -117,11 +113,11 @@ Trainieren sie (SuS) das Darstellungsvermögen nicht besser, in dem sie versuche
 #### &nbsp;
 
 <ul>
-<li class="fragment" data-fragment-index="0">zur Ergebnissicherung ?</li>
-<li class="fragment" data-fragment-index="1">zur Erkenntnisgewinnung ?</li>
-<li class="fragment" data-fragment-index="2">zur Überprüfung einer vorher formulierten Hypothesen ? </li>
-<li class="fragment" data-fragment-index="3">zur Veranschaulichung ? </li>
-<li class="fragment" data-fragment-index="4">zum Auffinden von Gesetzmässigkeiten ?</li>
+<li>zur Ergebnissicherung ?</li>
+<li>zur Erkenntnisgewinnung ?</li>
+<li>zur Überprüfung einer vorher formulierten Hypothesen ? </li>
+<li>zur Veranschaulichung ? </li>
+<li>zum Auffinden von Gesetzmässigkeiten ?</li>
 </ul>
 
 ---
@@ -139,8 +135,6 @@ Trainieren sie (SuS) das Darstellungsvermögen nicht besser, in dem sie versuche
 ## Antworten finden
 ---
 
-## Agenda
-
 1. Geometrie 
   - Punkte, Dreiecke, Ortslinien, Argumentieren 
   - Anwenden kleiner Apps.
@@ -149,13 +143,17 @@ Trainieren sie (SuS) das Darstellungsvermögen nicht besser, in dem sie versuche
 - Funktionen
 - Vektorgeometrie
 - Dessert
+<small>
   - Stochastik (Maturaufgabe)
   - Tabellenkalkulation
   - Piratenaufgabe
+  - Differentialgleichungen
   - Abbildungen (Matrizen)
   - Angry Birds Mathematik
   - Zentralprojektion & Parallaxe
   - Fermat-Punkt 
+
+</small>
 
 
 
@@ -171,12 +169,15 @@ Trainieren sie (SuS) das Darstellungsvermögen nicht besser, in dem sie versuche
 - Ortslinien von ausgezeichneten Punkten einer Funktionsschar
 - Eigenschaften der Kegelschnitte
 - Parameteraufgaben und Kurvendiskusion
+
 ---
 
-# Geometrie
+## Geometrie
 
 Konstruktion von ebenen Figuren, Dreiecke, spezielle Punkte
+
 ---
+
 ## Ortslinien, Spur: Argumentieren
 
 - Winkelhalbierende: [http://tube.geogebra.org/student/m320791](http://tube.geogebra.org/student/m320791)
@@ -186,10 +187,12 @@ Konstruktion von ebenen Figuren, Dreiecke, spezielle Punkte
 
 ---
 
-# Kinematik
+## Kinematik
 
 Bewegung eines Massenpunkts
+
 ---
+
 ## Simulation von einfachen Bewegungen
 
 - Freier Fall ohne Reibung [Link](http://tube.geogebra.org/material/show/id/122795)
@@ -198,6 +201,7 @@ Bewegung eines Massenpunkts
 - Harmonische Schwingung [Link](http://dmentrard.free.fr/GEOGEBRA/Sciences/Physique/Statique/Oscillation.html)
 
 ---
+
 # Geogebra 
 ##im 
 # Einsatz
@@ -219,7 +223,9 @@ Bewegung eines Massenpunkts
 ![Installation](media/geoinstallation.png)
 
 [http://www.geogebra.org/download](http://www.geogebra.org/download)
+
 ---
+
 ## Wichtig
 
 # Version 5.0 !
@@ -229,6 +235,7 @@ Bewegung eines Massenpunkts
 - Zusammenspiel mit GeoGebraTube
 
 ---
+
 ### 2. Möglichkeit 
 ### Direkt im Browser arbeiten
 
@@ -238,8 +245,8 @@ Bewegung eines Massenpunkts
 
 ---
 
-Schülerinnen und Schüler können bestehende Materialien direkt über
-[http://tube.geogebra.org/](http://tube.geogebra.org/) nutzen
+<small>Schülerinnen und Schüler können bestehende Materialien direkt über
+[http://tube.geogebra.org/](http://tube.geogebra.org/) nutzen </small>
 
 ![tube-geogebra.png](media/tube-geogebra.png)
 
@@ -260,41 +267,30 @@ Schülerinnen und Schüler können bestehende Materialien direkt über
 Twitter: [@geogebra](https://twitter.com/geogebra)
 
 ![@geogebra](media/twittergeogebra.png)
+
 ---
 
-### Weitere GeoGebra Quellen 
 <small> Daniel Mentrard </small>
 
+<small>
 ![Beispiele](media/Beispiele.png)
-
+</small>
+<small>
 [http://dmentrard.free.fr/GEOGEBRA/index.htm](http://dmentrard.free.fr/GEOGEBRA/index.htm)
---
-
-### Probleme ?
-
-![probleme](media/probleme.png)
-
---
-
-![entwicklerwerkerkzeuge](media/entwicklerwerkerkzeuge.png)
+</small>
 
 ---
-
-### Weitere GeoGebra Quellen
 
 [GeoGebra Material zu MatheWelt_187](http://tube.geogebra.org/material/show/id/409833)
 
 <small>H.-J. Eschenbroich </small>
 
-![Funktionen_unter_der_Lupe](media/Funktionen_unter_der_Lupe.png)
+![Funktionen_unter_der_Lupe](media/Funktionen_unter_der_Lupe2.png)
 
 ---
 
-# Funktionen
+### Funktionen
 
----
-
-### 
 
 - Funktionen graphisch darstellen
 - Funktionen unter der Lupe
@@ -333,6 +329,7 @@ f(x) =x^2*sin(x^2)
 X_0 =Punkt[y=0]
 P =(x(X_0),f(x(X_0)))
 ```
+
 --
 
 # Exkurs Folgen
@@ -411,6 +408,7 @@ reihe = Summe[folgefunkt]
 
 
 --
+
 ### Folgen geometrischer Objekte
 
 <br>
@@ -423,14 +421,19 @@ Folge[Vieleck[A, B, i], i, 3, 23]
 
 
 --
+
 ![FolgeVielecke](media/folgevielecke.png)
+
 --
+
 ### Gitter 
 
 ![Gitter](media/gitter.png)
 
 [Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/319025)
+
 --
+
 ### GeoGebra Befehle für ein Gitter
 
 ```apache
@@ -444,9 +447,10 @@ Folge[Strecke[(px, y_{Min}), (px, y_{Max})], px, x_{Min}, x_{Max}, dx]
 Folge[Strecke[(x_{Min}, py), (x_{Max}, py)], py, y_{Min}, y_{Max}, dy]
 
 ```
+
 ---
 
-## Verknüpfung von Funktionen
+##### Verknüpfung von Funktionen
 
 
 Eingabe:
@@ -473,13 +477,15 @@ Löse[h(x)=0]
 Löse[h'(x)=0]
 
 ```
+
 ---
+
 ## Verknüpfung von Funktionen
 
 [Link GeoGebraTube](http://tube.geogebra.org/student/m764839)
 
 
-<video width="1030" height="572" data-autoplay loop controls>
+<video width="800" height="472" data-autoplay loop controls>
         <source src="media/movies/funktverknuepfen.m4v" type="video/mp4" />
         <source src="media/movies/funktverknuepfen.webm" type="video/webm" />
         Your browser does not support the <code>video</code> element.
@@ -487,7 +493,7 @@ Löse[h'(x)=0]
 
 
 ---
-## Funktionen mit Parameter (Maturaufgabe Oberwil 2014)
+#### Funktionen mit Parameter (Maturaufgabe)
 
 ![maturaufgabe_oberwil](media/maturaufgabe_oberwil.png)
 
@@ -524,6 +530,7 @@ Löse[Ableitung[f(x, b),x]=0,b]
 ```
 
 ---
+
 [Link GeoGebraTube](http://tube.geogebra.org/student/m765169)
 
 <video width="1030" height="572" data-autoplay loop controls>
@@ -533,11 +540,14 @@ Löse[Ableitung[f(x, b),x]=0,b]
 </video>
 
 ---
-# Vektor-geometrie
+
+## Vektorgeometrie
 - Ein Spat
 - Abstand zweier Geraden
 - Würfelschnitte
+
 ---
+
 ### Ein Spat
 
 <video width="802" height="602" data-autoplay loop controls>
@@ -547,7 +557,9 @@ Löse[Ableitung[f(x, b),x]=0,b]
 </video>
 
 - [http://tube.geogebra.org/student/m320977](http://tube.geogebra.org/student/m320977)
+
 ---
+
 ### Abstand zweier Geraden
 
 ![abstandgeraden](media/abstandgeraden.png)
@@ -586,20 +598,22 @@ Löse[Ableitung[f(x, b),x]=0,b]
 
 
 ---
+
 ## Dessert
 - Stochastik (Maturaufgabe)
-- Tabellen-kalkulation
+- Tabellenkalkulation
 - Piratenaufgabe
 - Differentialgleichungen
 - Abbildungen (Matrizen)
 - Angry Birds Mathematik
 - Zentralprojektion & Parallaxe
 - Fermat-Punkt 
----
-# Stochastik
+
+
 ---
 
 ## Stochastik Maturaufgabe
+
 [https://tube.geogebra.org/student/m769673](https://tube.geogebra.org/student/m769673)
 
 ![Gym Oberwil, Schwerpunktfach 2012](media/pokerkarten.jpg)
@@ -607,29 +621,37 @@ Löse[Ableitung[f(x, b),x]=0,b]
 
 
 ---
-### Teilaufgabe a - CAS-Fenster
 
-![Gym Oberwil, Schwerpunktfach 2012](media/Folie1.PNG)
+#### Teilaufgabe a - CAS-Fenster
 
----
-### Teilaufgabe a&b - CAS-Fenster
-
-![Gym Oberwil, Schwerpunktfach 2012](media/Folie2.PNG)
+![Gym Oberwil, Schwerpunktfach 2012](media/Folie1a.PNG)
 
 ---
-### c - Wahrscheinlichkeitsrechner im Menü zum CAS-Fenster
 
-![Gym Oberwil, Schwerpunktfach 2012](media/Folie4.PNG)
+#### Teilaufgabe a&b - CAS-Fenster
+
+![Gym Oberwil, Schwerpunktfach 2012](media/Folie2a.PNG)
 
 ---
-# Tabellen-kalkulation
+
+### <small> c - Wahrscheinlichkeitsrechner im Menü zum CAS-Fenster </small>
+
+![Gym Oberwil, Schwerpunktfach 2012](media/Folie4a.PNG)
+
+---
+
+## Tabellen
+## -kalkulation
+
 - Körperoberfläche [http://tube.geogebra.org/student/m321081](http://tube.geogebra.org/student/m321081)
 - Digoxin [http://tube.geogebra.org/student/m321095](http://tube.geogebra.org/student/m321095)
 - 1000 Zufallszahlen [http://tube.geogebra.org/student/m321107](http://tube.geogebra.org/student/m321107)
 
 ---
+
 #Piraten-
 #aufgabe
+
 ---
 
 ![Piratenaufgabe](media/Piratenaufgabe.png)
@@ -641,7 +663,9 @@ Löse[Ableitung[f(x, b),x]=0,b]
 
 
 [Link auf GeoGebraTube](http://tube.geogebra.org/material/show/id/268433)
+
 ---
+
 ## Bewegungen simulieren
 
 <br>
@@ -654,6 +678,7 @@ x,y-Position als Funktion von t
 t = 0.0
 P = (t,sin(t))
 ```
+
 ---
 
 <video width="980" height="470" data-autoplay controls>
@@ -663,19 +688,26 @@ P = (t,sin(t))
 </video>
 
 ---
+
 # Diff Gl.
+
 ---
+
 ### Differentialgleichungen
 - [http://wiki.geogebra.org/de/L%C3%B6seDgl_%28Befehl%29](http://wiki.geogebra.org/de/L%C3%B6seDgl_%28Befehl%29)
 - [http://wiki.geogebra.org/de/Richtungsfeld_(Befehl)](http://wiki.geogebra.org/de/Richtungsfeld_(Befehl))
+
 ---
+
 ### Wachtumsmodelle
 
 [http://tube.geogebra.org/material/show/id/31166](http://tube.geogebra.org/material/show/id/31166)
 
 
 ![Wachstumsmodelle](media/Wachstumsmodelle.png)
+
 ---
+
 ### Richtungsfeld & Lösungen 
 
 <small> einfacher Differentialgleichungen </small>
@@ -700,42 +732,48 @@ LöseDgl[f, x(A), y(A), 20, 0.1]
 
 
 
-<video width="954" height="690" data-autoplay controls>
+<video width="714" height="500" data-autoplay controls>
         <source src="media/movies/Richtungsfeld.m4v" type="video/mp4" />
         <source src="media/movies/Richtungsfeld.webm" type="video/webm" />
         Your browser does not support the <code>video</code> element.
 </video>
 
 ---
-# Abbildungen
+
+## Abbildungen
+
 ---
+
 ## Spiegelung
 
-<br>
 
 ![Spiegelung](media/L6-Spiegelung.png)
 
 ---
+
 Die Abbildungsmatrix ist
 
-<br>
 
 $$
 A = \begin{pmatrix} -1 & 0  \\\\ 0 & 1 \end{pmatrix}
 $$
+
 ---
-###Abbildung eines Punktes
+
+### Abbildung eines Punktes
 
 ![Abbildung eines Pukts](media/linabb.png)
 
 [Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/316901)
 
 --
+
 ### Drehung
 
 ![Drehung](media/L6-Drehung.png)
 
 --
+
 #### Darstellung einer Drehung um den Punkt (0,0) gegen den Uhrzeigersinn um \\(90°\\)
 
 Diese lin. Abbildung bildet
@@ -753,19 +791,23 @@ Diese lin. Abbildung bildet
 $$
 A = \begin{pmatrix} 0 & -1  \\\\ 1 & 0 \end{pmatrix}
 $$
+
 --
+
 Auch Drehungen sind lineare Abbildungen. Eine Drehung um den Winkel \\(\phi\\) im mathematisch positiven Sinn (gegen den Uhrzeigersinn) kann wie folgt beschrieben werden:
 
 <br>
 
 $$
 L : \quad \mathbb{R}^2 \to \mathbb{R}^2 \\\\
-\quad \quad \quad (x,y) \mapsto (x\cos(\phi)−y\sin(\phi),x\sin(\phi)+y\cos(\phi))
+\quad \quad \quad (x,y) \mapsto \\\\
+(x\cos(\phi)−y\sin(\phi),x\sin(\phi)+y\cos(\phi))
 $$
 <br>
 
 
 --
+
 #### Drehung Gegenuhrzeigersinn um einen Winkel  \\(\phi\\)
 
 
@@ -782,6 +824,7 @@ A = \begin{pmatrix} \cos(\phi) & -sin(\phi)  \\\\ sin(\phi) & \cos(\phi) \end{pm
 $$
 
 ---
+
 ### Rastergrafik mit linearen Abbildungen transformieren
 
 ![lin Abb Rastergrafik](media/linAbbBiber.png)
@@ -789,6 +832,7 @@ $$
 [Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/316939)
 
 ---
+
 ###Projektion
 
 ![Projektion](media/L6-Projektion.png)
@@ -796,7 +840,9 @@ $$
 $$
 \mbox{auf x-Achse} \quad \quad \quad \quad \quad \mbox{auf y-Achse}
 $$
+
 ---
+
 Die orthogonale Projektion auf die x-Achse ist auch eine lineare Abbildung. Die Zuordnungsvorschrift ist
 
 $$
@@ -814,6 +860,7 @@ A = \begin{pmatrix} 1 & 0  \\\\ 0 & 0 \end{pmatrix}
 $$
 
 --
+
 Die orthogonale Projektion auf die y-Achse ist eine lineare Abbildung. Die Zuordnungsvorschrift ist
 
 $$
@@ -831,6 +878,7 @@ A = \begin{pmatrix} 0 & 0  \\\\ 0 & 1 \end{pmatrix}
 $$
 
 ---
+
 ### Punkt auf eine Gerade a projizieren
 
 
@@ -842,12 +890,16 @@ $$ a: y = -3 x$$
 	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/OrtoProj_auf_Gerade.webm" type="video/webm" />
 		Your browser does not support the <code>video</code> element.
 </video>
+
 ---
+
 ### Vorgehen
 * Gesamte Figur drehen bis die Gerade a auf der  x-Achse liegt
 * Den Punkt auf die x-Achse projizieren
 * den projezierten Punkt wieder zurück drehen.
+
 --- 
+
 ### 1. Schritt Drehen um \\( \alpha \\)
 
   \\(\tan(\alpha) = -3 \to \alpha \approx -71.57°\\)
@@ -859,9 +911,13 @@ $$ a: y = -3 x$$
 <br>
 
 [GeoGebraTube](http://www.geogebratube.org/material/show/id/144454)
+
 ---
+
 ![Schritt1](media/proj_erster_schritt.png)
+
 ---
+
 ### 2. Schritt Projektion auf x-Achse
 
 
@@ -873,8 +929,11 @@ $$ a: y = -3 x$$
 [GeoGebraTube](http://www.geogebratube.org/material/show/id/144455)
 
 ---
+
 ![Schritt2](media/proj_zweiter_schritt.png)
+
 ---
+
 ### 3. Schritt Rückdrehen um \\( \alpha \\)
 
  \\( \alpha \approx -71.57°\\)
@@ -886,9 +945,13 @@ $$ a: y = -3 x$$
 <br>
 
 [GeoGebraTube](http://www.geogebratube.org/material/show/id/144457)
+
 ---
+
 ![Schritt3](media/proj_dritter_schritt.png)
+
 ---
+
 ### In einem Schritt
 
 $$R_{-a} \cdot P_X \cdot R_a \left( \begin{matrix} x\\\\ y \\\\ \end{matrix} \right)  $$
@@ -914,16 +977,8 @@ Wähle eine Matrix \\(A\\) so, dass die Spaltenvektoren eine Basis eines Unterra
 $$
 proj_w P = A (AA^T)^{-1} A^T P
 $$
---
 
-$$
-\begin{align}
-\vec{b} &= \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix}\\\\
-b^Tb &= \begin{pmatrix} \cos(\alpha),&\sin(\alpha)\end{pmatrix} \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix}= \begin{pmatrix} \cos(\alpha)  \\\\ \sin(\alpha)\end{pmatrix} \\\\
-   &= \cos(\alpha)^2 + \sin(\alpha)^2 = 1\\\\
-(b^Tb)^{-1} &= 1
-\end{align}
-$$
+
 --
 
 $$
@@ -958,27 +1013,36 @@ $$
 [Link to GeoGebraTube](http://www.geogebratube.org/material/show/id/144182)
 
 ---
+
 # Angry Birds Mathe
+
 ---
+
 ![Angry Bird](media/angrybird1.png)
 
 [Link auf Webseite](http://www.teachmathematics.net/page/16049/angry-birds-1)
+
 ---
+
 ![Angry Bird](media/angrybird2.png)
 
 [Link auf Webseite](http://www.teachmathematics.net/page/11419/angry-birds-2)
 
 ---
-## Zentralprojektion 
+
+### Zentralprojektion 
 ###& 
-##Parallax Effekte
+### Parallax Effekte
+
 --
+
 ## Parallax Effekte (Werbung)
-<video width="1280" height="720" data-autoplay controls>
+<video width="940" height="520" data-autoplay controls>
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/Parallaxe.mp4" type="video/mp4" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/Parallaxe.webm" type="video/webm" />
 		Your browser does not support the <code>video</code> element.
 </video>
+
 ---
 
 Modellierung eines perspektivischen
@@ -987,19 +1051,23 @@ Abbildungssystems mit
 
 
 ---
+
 ![Dürer](media/durer1.gif)
 
 [Link](http://www.uh.edu/engines/epi138.htm)
 Mechanical creation of a perspective image by Albrecht Dürer
 
 ---
+
 ### perspektivische Abbildung <small> Quader auf Ebene</small>
-<video width="1012" height="720" data-autoplay controls>
+<video width="812" height="520" data-autoplay controls>
 	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/ZentralprojektionBox.m4v" type="video/mp4" />
 	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/ZentralprojektionBox.webm" type="video/webm" />
 		Your browser does not support the <code>video</code> element.
 </video>
+
 --
+
 ### Konventionen 
 
 * Annahme das Zentrum der Abbildung ist im Ursprung
@@ -1008,6 +1076,7 @@ Mechanical creation of a perspective image by Albrecht Dürer
 
 
 --
+
 ### ZentralProjektion auf Ebene normal zur Z-Achse
 mit Brennweite f
 
@@ -1022,6 +1091,7 @@ $$P=\left( \begin{matrix}
         \end{matrix} 
         \right) $$
 --
+
 ### Projektion auf homogenen Vektor anwenden
 
 <br>
@@ -1051,7 +1121,9 @@ $$P\cdot \overrightarrow{r}=\left( \begin{matrix}
          $$
 
 --
+
 ## Übergang homogenen Koordinaten zu kartesischen Koordinaten
+
 --
 
 $$ \left( \begin{matrix} 
@@ -1068,15 +1140,19 @@ $$ \left( \begin{matrix}
         \end{matrix}\right)
 $$ 
 --
+
 ## Zahlenbeispiel
 
 * Sei  f = 10  
 * Ein Punkt (8,4,20) soll auf die Normalebene zur Z-Achse im Abstand von 10 abgebildet werden.
+
 --
+
 ![Beispiel](media/Beispiel_proj.png)
 
 
 --
+
 $$ \left( \begin{matrix} 
         8 \\\\
         4 \\\\
@@ -1099,14 +1175,16 @@ $$ \left( \begin{matrix}
 $$ 
 
 --
+
 <span style="float:left;">
 ![xz](media/xzplane.png)
 ![xz](media/yzplane.png)
 </span>
 
 --
+
 ### Zentralprojektion <small>auf Ebene normal zur Z-Achse mit Brennweite f</small>
-<video width="1012" height="720" data-autoplay controls>
+<video width="802" height="580" data-autoplay controls>
 	    <source src="http://mgje.github.io/LinAlg/slides/media/movies/Zentralprojektion_Tetraeder.m4v" type="video/mp4" />
 	    <source src="http://mgje.github.io/LinAlg/slides/
 	    media/movies/Zentralprojektion_Tetraeder.webm" type="video/webm" />
@@ -1116,6 +1194,7 @@ $$
 
 
 ---
+
 ## Homogene Koordinaten 
 ### für $\vec{v}\in\mathbb{R}^2$
 
@@ -1161,8 +1240,10 @@ Q_y /( Q_z )
 \end{matrix}
 \right)
 $$
+
 ---
-## Zentralprojektion
+
+### Zentralprojektion
 ### $\mathbb{R}^2\to\mathbb{R}^2$ 
 #### homogene Koordinaten
 
@@ -1175,6 +1256,7 @@ $$P=\left( \begin{matrix}
         \end{matrix} 
         \right)$$ 
 ---
+
 ## Rotation
 
 <br>
@@ -1187,6 +1269,7 @@ $$R=\left( \begin{matrix}
         \right)$$
 
 ---
+
 ## Translation
 
 <br>
@@ -1199,38 +1282,28 @@ $$T=\left( \begin{matrix}
         \right)
          $$
 ---
-### Zentralprojektion 
+
+#### Zentralprojektion 
 
 
 ![Zentralprojektion](media/Zentralprojektion.png)
 
 [Link auf GeoGebraTube](http://tube.geogebra.org/student/m119327)
 
----
-## Zentralprojektion im Kino
 
---
-### Im Kino
-
-versuchen Agenten in einen Tresorraum 
-einzudringen, ohne dass Sie von einem Wächter entdeckt werden. 
-
-Sie projizieren dafür den hinteren Teil eines schmalen Gangs perspektivisch auf eine Leinwand (Bildebene).
-
-Anschliessend bewegen sie die Leinwand langsam nach vorne. 
-
-Die Sache fliegt in dem Moment auf, in welchem ein zweiter Betrachter hinzu
-kommt. 
 
 ---
+
 ### Ausschnitt Mission Impossible 4
-<video width="960" height="540" data-autoplay controls>
+<video width="890" height="480" data-autoplay controls>
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/MIP2.m4v" type="video/mp4" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/MIP.webm" type="video/webm" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/MIP.ogv" type="video/ogg" />
 		Your browser does not support the <code>video</code> element.
 </video>
+
 ---
+
 ![MIP](media/MIP.png)
 
 [Link GeoGebraTube](http://tube.geogebra.org/material/show/id/120897)
@@ -1239,9 +1312,16 @@ kommt.
 <!-- Introduction -->
 <section data-markdown data-separator="---" data-vertical="--" data-background="#b2bAb2">
 <script type="text/template">
+--
+--
+--
+
 ## Fermat-Punkt
+
 ---
+
 ![Buch](media/buch.png)
+
 ---
 
 ![Aufgabe91](media/aufgabe91.png)
@@ -1251,10 +1331,11 @@ kommt.
 <small>[Dorrie, H. (1965). 100 Great problems of elementary mathematics. Dover Publications.](http://cds.cern.ch/record/1551234)</small>
 
 ---
+
 ### Optimale Position eines Kraftwerks
 
 
-<video class="stretch" width="798" height="610" data-autoplay controls>
+<video class="stretch" width="660" height="510" data-autoplay controls>
         <source src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.m4v" type="video/mp4" />
     <source src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.webm" type="video/webm" />
     Your browser does not support the <code>video</code> element.
@@ -1266,6 +1347,7 @@ kommt.
 
 
 ---
+
 ![Fig 1](media/fermat_problem_fig1.png)
 
 </script>
@@ -1274,21 +1356,25 @@ kommt.
 <!-- Math Exploring -->
 <section  data-markdown data-separator="---" data-vertical="--" data-background="#00fAa9" data-background-transition="slide">
 <script type="text/template">
+--
+--
+--
+--
 
 # Exakte Lösung
 <br>
 ###für n = 3
 ---
+
 ![geometric solution](media/geometric_solution.png)
---
-### Geometrischer Beweis
 
-![geometric solution](media/geometric_proof.png)
 
-[Link to Geogebra Material](http://www.geogebratube.org/student/m71061)
 ---
+
 ## **Wer** hat als erstes ein numerisches Lösungsverfahren für **n>3** gefunden?
+
 ---
+
 ### Facility Location Problems
 
 ### Ein Teilgebiet der kombinatorischen Optimierung 
@@ -1298,13 +1384,16 @@ kommt.
 ****
 <small>
 M. L. Balinksi. On finding integer solutions to linear programs. In Proceedings of the IBM Scientific Computing Symposium on Combinatorial Problems, pages 225–248. IBM, 1966.</small>
+
 ---
+
 ![Andrew_Vazsonyi](media/Andrew_Vazsonyi.png)
 
 ```I was sixteen when I became intrigued with the N point 
 problem``` 
 
 ***Andrew Vázsonyi, 1932***
+
 --
 
 ```Cosider N points and one more 
@@ -1313,7 +1402,9 @@ points, then add the distances. Find point X so
 that this sum is the smallest possible.```
 
 Andrew Vázsonyi
+
 --
+
 ```I found the point X by using an infinite, 
 recursive algorithm, a most unusual solution 
 for a problem in geometry. You start with a
@@ -1321,7 +1412,9 @@ point X0, anywhere, and search for a better
 solution.```
 
 Andrew Vázsonyi, 1937
+
 ---
+
 The paper "Sur le point pour lequel les sommes
 des distances de n points donnés et minimum", 
 published in **Japan** in **1937** under the name 
@@ -1335,10 +1428,15 @@ mathematics of location analysis.
 
 <section data-markdown data-separator="---" data-vertical="--" data-background="#FF5E99" data-background-transition="slide" >
 <script type="text/template" >
+--
+--
+--
+--
 
 #Weiszfeld
 <br>
 ### Algorithmus
+
 ---
 
 ![Andrew Vázsonyi](media/Vazsonyi_Px.jpg) 
@@ -1346,6 +1444,7 @@ mathematics of location analysis.
 by Endre Weiszfeld, alias Andrew Vázsonyi (1916–2003), born in Budapest
 
 ---
+
 ### Weiszfeld Algorithmus
 
 $$ k \mbox{ Iterationsschritte} $$
@@ -1362,6 +1461,7 @@ $$  \vec{y\_{k+1}} = \frac{ \sum\_{i=1}^{N}  \frac{\vec{x\_i}}{\|| \vec{x\_i}-\v
 </small>
 
 --
+
 ### Weiszfeld Algorithmus
 ### mit JavaScript (I)
 
@@ -1381,7 +1481,9 @@ geometric_median = function(epsilon) {
     }
 };
 ```
+
 --
+
 ### Weiszfeld Algorithmus
 ### mit JavaScript (II)
 
@@ -1410,6 +1512,7 @@ median_approx = function(P) {
 
 
 ---
+
 Fermat-Punkt für n>3
 
 
@@ -1418,17 +1521,19 @@ Fermat-Punkt für n>3
 [Link GeoGebraTube](http://tube.geogebra.org/material/show/id/52934)
 
 ---
-### Potenziale und Äquipotentialflächen
 
-[Link GeoGebraTube](http://tube.geogebra.org/material/show/id/749553)
+<small> Potenziale und Äquipotentialflächen  </small>
+
+<small>  [Link GeoGebraTube](http://tube.geogebra.org/material/show/id/749553) </small>
 
 
 ![Potenzial](media/Potential.png)
 
 ---
-### Im ein dimensionalen Fall
 
-### springt der Fermat-Punkt auf den Median
+<small> Im ein dimensionalen Fall </small>
+
+<small> springt der Fermat-Punkt auf den Median </small>
 
 ![median](media/medianfermat.png)
 
@@ -1440,9 +1545,11 @@ Fermat-Punkt für n>3
 <section  data-markdown data-separator="---" data-vertical="--" data-background="#22222" data-background-transition="slide">
 <script type="text/template">
 # Numerische Experimente
+
 ---
-### FP bewegt sich auf einem Orbit
-<video width="998" height="712" data-autoplay controls>
+
+<small>  FP bewegt sich auf einem Orbit </small> 
+<video width="798" height="512" data-autoplay controls>
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.mp4" type="video/mp4" />
 		<source src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.webm" type="video/webm" />
 		<source src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.ogv" type="video/ogg" />
@@ -1450,24 +1557,29 @@ Fermat-Punkt für n>3
 </video>
 
 --
-### FP springt auf innere Punkte
-<video width="854" height="634" data-autoplay controls>
+
+<small> FP springt auf innere Punkte </small> 
+<video width="724" height="534" data-autoplay controls>
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.mp4" type="video/mp4" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.webm" type="video/webm" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.ogv" type="video/ogg" />
 		Your browser does not support the <code>video</code> element.
 </video>
+
 ---
+
 ## Wo befindet sich der Mittelpunkt von Europa ?
+
 ---
-<video width="972" height="728" data-autoplay controls>
+
+<video width="732" height="528" data-autoplay controls>
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.mp4" type="video/mp4" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.webm" type="video/webm" />
 	    <source src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.ogv" type="video/ogg" />
 		Your browser does not support the <code>video</code> element.
 </video>
 
-[Link GeoGebraTube](http://tube.geogebra.org/material/show/id/66049)
+<small> [Link GeoGebraTube](http://tube.geogebra.org/material/show/id/66049)</small> 
 
 </script>
 </section>
@@ -1495,9 +1607,7 @@ Fermat-Punkt für n>3
 				overview: true,
 				slideNumber: true,
 
-				
-
-    			width: 1024,
+				width: 1024,
     			height: 768,
 
     			//width: 1440,
