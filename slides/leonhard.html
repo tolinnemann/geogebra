@@ -223,29 +223,6 @@ GeoGebra Anwendungen selbständig erproben und weitere Beispiele in GeoGebraTube
 * Stochastik [B1](http://tube.geogebra.org/material/show/id/3587) [B2](http://tube.geogebra.org/material/show/id/120337) [B3](http://tube.geogebra.org/material/show/id/86141) [B4](http://tube.geogebra.org/student/b71489)
 <br><br>
 * Regression [B1](http://tube.geogebra.org/material/show/id/108888) [B2](http://tube.geogebra.org/student/b154316) [B3](http://tube.geogebra.org/material/show/id/112292)
---
-
-
-## Lineare Funktionen
-
-- [Graph einer linearen Funktion](http://tube.geogebra.org/student/m163667)
-- [Handy Tarife](http://tube.geogebra.org/student/m1144811)
-- [Finde den Schnittpunkt zweier Geraden](http://tube.geogebra.org/student/m570369)
-- [Umfang Quadrat](http://tube.geogebra.org/student/b409833#material/409825)
-
-
---
-
-## Quadratische Funktionen
-
-- [Graph einer quadratischen Funktion](http://tube.geogebra.org/student/m163691)
-- [Scheitelpunkt Parametrisierung](http://tube.geogebra.org/student/m163735)
-- [Nullstellen Parametrisierung](http://tube.geogebra.org/student/m163747)
-- [Verschiedene Arten der Parametrisierung](http://tube.geogebra.org/student/b77536#material/3574)
-- [Parabel auf Fontäne verschieben](http://tube.geogebra.org/student/b409833#material/410469)
-- [Aufgaben zu Scheitelpunktsform](http://tube.geogebra.org/student/m79644)
-
-
 
 
 
@@ -265,8 +242,38 @@ GeoGebra Anwendungen selbständig erproben und weitere Beispiele in GeoGebraTube
 
 [Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/317609)
 
+---
 
 
+
+## Lineare Funktionen
+
+- [Graph einer linearen Funktion](http://tube.geogebra.org/student/m163667)
+- [Handy Tarife](http://tube.geogebra.org/student/m1144811)
+- [Finde den Schnittpunkt zweier Geraden](http://tube.geogebra.org/student/m570369)
+- [Umfang Quadrat](http://tube.geogebra.org/student/b409833#material/409825)
+
+
+---
+
+## Quadratische Funktionen
+
+- [Graph einer quadratischen Funktion](http://tube.geogebra.org/student/m163691)
+- [Scheitelpunkt Parametrisierung](http://tube.geogebra.org/student/m163735)
+- [Nullstellen Parametrisierung](http://tube.geogebra.org/student/m163747)
+- [Verschiedene Arten der Parametrisierung](http://tube.geogebra.org/student/b77536#material/3574)
+- [Parabel auf Fontäne verschieben](http://tube.geogebra.org/student/b409833#material/410469)
+- [Aufgaben zu Scheitelpunktsform](http://tube.geogebra.org/student/m79644)
+---
+
+
+### Funktionen unter der Lupe
+
+<small>H.-J. Eschenbroich </small>
+
+[http://tube.geogebra.org/material/show/id/411519](http://tube.geogebra.org/material/show/id/411519)
+
+![Steigung_mit_FunktionenLupe](media/Steigung_mit_FunktionenLupe.png)
 ---
 
 ### Punkt auf Funktion
@@ -437,54 +444,6 @@ Löse[h'(x)=0]
         Your browser does not support the <code>video</code> element.
 </video>
 
-
---
-## Funktionen mit Parameter 
-## (Maturaufgabe Oberwil 2014)
-
-![maturaufgabe_oberwil](media/maturaufgabe_oberwil.png)
-
---
-
-Eingabe:
-
-```apache
-
-f(x, a) = -a x^3 + (a + 1) x^2
-
-g(x) = f(x, a)
-
-P = (1, 1)
-
-Mg = Element[Liste1, 2]
-
-Q = (x(Mg), g(x(Mg)))
-
-
-```
-
-Im CAS-Fenster
-
-
-```apache
-
-f(1,a)
-
-Liste1:=Löse[g'(x) = 0]
-
-Löse[Ableitung[f(x, b),x]=0,b]
-
-```
-
---
-[Link GeoGebraTube](http://tube.geogebra.org/student/m765169)
-
-<video width="1030" height="572" data-autoplay loop controls>
-        <source data-src="media/movies/maturaOberwil.m4v" type="video/mp4" />
-        <source data-src="media/movies/maturaOberwil.webm" type="video/webm" />
-        Your browser does not support the <code>video</code> element.
-</video>
-
 ---
 ## CAS direkt 
 
@@ -547,6 +506,55 @@ g(x):=Ersetze[$1,$6]
 ### Auftrag: Testen Sie es gleich aus!
 
 [CAS im Browser](http://tube.geogebra.org/material/show/id/919901)
+
+---
+## Funktionen mit Parameter 
+## (Maturaufgabe Oberwil 2014)
+
+![maturaufgabe_oberwil](media/maturaufgabe_oberwil.png)
+
+--
+
+Eingabe:
+
+```apache
+
+f(x, a) = -a x^3 + (a + 1) x^2
+
+g(x) = f(x, a)
+
+P = (1, 1)
+
+Mg = Element[Liste1, 2]
+
+Q = (x(Mg), g(x(Mg)))
+
+
+```
+
+Im CAS-Fenster
+
+
+```apache
+
+f(1,a)
+
+Liste1:=Löse[g'(x) = 0]
+
+Löse[Ableitung[f(x, b),x]=0,b]
+
+```
+
+--
+[Link GeoGebraTube](http://tube.geogebra.org/student/m765169)
+
+<video width="1030" height="572" data-autoplay loop controls>
+        <source data-src="media/movies/maturaOberwil.m4v" type="video/mp4" />
+        <source data-src="media/movies/maturaOberwil.webm" type="video/webm" />
+        Your browser does not support the <code>video</code> element.
+</video>
+
+---
 
 ---
 
