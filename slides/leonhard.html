@@ -608,7 +608,6 @@ https://tube.geogebra.org/student/m55929
 - Dritte binomische Formel: 
 https://tube.geogebra.org/student/m4718
 
----
 
 ---
 # Vektor-geometrie
@@ -735,8 +734,7 @@ Finde einen maximalen Zylinder in einer Kugel
 
 ---
 ## Dessert
-- Tabellen-kalkulation
-- Piratenaufgabe
+- Tabellenkalkulation
 - Differentialgleichungen
 - Abbildungen (Matrizen)
 - Bestimmung von Eigenvektoren
@@ -968,14 +966,6 @@ allg. Lösung:
 - [http://wiki.geogebra.org/de/Richtungsfeld_%28Befehl%29](http://wiki.geogebra.org/de/Richtungsfeld_%28Befehl%29)
 - [Schwingungen und Wellen](http://tube.geogebra.org/material/show/id/71439)
 
----
-
-### Rugby Aufgabe
-
-![Rugby](media/resnick2.GIF)
-
-
-[Rugby Session by Seymour Papert](http://www.papert.org/articles/AnExplorationintheSpaceofMathematicsEducations.html)
 
 ---
 ### Exkurs
@@ -1698,7 +1688,74 @@ kommt.
 <!-- Introduction -->
 <section data-markdown data-separator="---" data-separator-vertical="--" data-background="#b2bAb2">
 <script type="text/template">
-## Fermat-Punkt
+# Fermat-Punkt
+---
+
+## Wo ist der beste Ort für einen Spielplatz?
+
+
+![Ausgangslage](media/spielplatz_abb1.png)
+
+<br>
+
+<small>
+Roth-Sonnen Nicole, Leuders, T., Barzel, B., & Hußmann, (2005). Computer, Internet und co im Mathematikunterricht. (S. 190) Berlin: Cornelsen.
+</small>
+---
+### Schülerinnen und Schüler 
+
+###schlüpfen in die Rolle eines Gutachters
+
+<br>
+
+<ul>
+<li class="fragment" data-fragment-index="1">Möglichst kurzer Weg ?</li>
+<li class="fragment" data-fragment-index="2">Direkt (durch das Gelände) oder einer Strasse nach ?</li>
+<li class="fragment" data-fragment-index="3">Sollen Häuser mit mehr Kindern äquivalent gewichtet werden ?</li>
+</ul>
+
+---
+##Direkter Weg
+
+<video class="stretch" width="550" height="340" data-autoplay  controls>
+    <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/spielplatzeuklid.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/spielplatzeuklid.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
+</video>
+
+
+<small>[Link zu GeoGebraTube: Spielplatz_Entfernung](http://www.geogebratube.org/material/show/id/320855) &nbsp;&nbsp; von &nbsp;&nbsp; [Torsten Linnemann](http://www.geogebratube.org/torsten_linnemann)</small>
+---
+##Eckenhausen, Wege entlang eines quadratischen Gitters 
+
+<video class="stretch" width="830" height="360" data-autoplay controls>
+    <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Eckenhausen.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Eckenhausen.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
+</video>
+
+<small>[Link zu GeoGebraTube: &nbsp; spielplatz_Eckenhausen](http://www.geogebratube.org/material/show/id/320903) &nbsp;&nbsp; von &nbsp;&nbsp; [Torsten Linnemann](http://www.geogebratube.org/torsten_linnemann)</small>
+--
+## Ganzzahl-Arithmetik mit GeoGebra
+
+```javascript
+(function(){
+  "use strict";
+  var x_,y_,x_new,y_new;
+  x_ = ggbApplet.getXcoord("S");
+  y_ = ggbApplet.getYcoord("S");
+  x_new = Math.round(x_);
+  y_new = Math.round(y_);
+  ggbApplet.setCoords("S",x_new,y_new);
+})();
+
+```
+
+![Integer Animation](media/integer_bewg.png)
+
+
 ---
 ![Buch](media/buch.png)
 ---
@@ -1714,8 +1771,9 @@ kommt.
 
 
 <video class="stretch" width="798" height="610" data-autoplay controls>
-        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.m4v" type="video/mp4" />
     <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.m4v" type="video/mp4" />
+    
     Your browser does not support the <code>video</code> element.
 </video>
 
@@ -1726,6 +1784,7 @@ kommt.
 
 ---
 ![Fig 1](media/fermat_problem_fig1.png)
+
 
 </script>
 </section>
