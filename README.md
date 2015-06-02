@@ -13,20 +13,23 @@ Fortbildung GeoGebra
 - [PDF Download](http://mgje.github.io/geogebra/slides/muttenz.pdf)
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/muttenz.html)
 
-
-### [FMS Basel](http://www.fmsbasel.ch/)  5.6.2015
-- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/fms-basel.html)
-
-
+### [Wirtschafts Gymnasium](http://www.gymmuenchenstein.ch/)  2015
+- [PDF Download](http://mgje.github.io/geogebra/slides/wg.pdf)
+- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/wg.html)
 
 
+### [Gymnasium Münchenstein](http://www.gymmuenchenstein.ch/)  2015
+- [PDF Download](http://mgje.github.io/geogebra/slides/muenchenstein.html)
+- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/muenchenstein.html)
+
+### [Gymnasium Oberwil](http://www.gymoberwil.ch/)2015
+- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/oberwil.html)
 
 ### [FMS Basel](http://www.fmsbasel.ch/)  28.5.2015
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/fms-basel.html)
 
 ### [Gymnasium Leonhard](http://www.gymnasium-leonhard.ch/)  5.6.2015
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/leonhard.html)
-
 
 
 
