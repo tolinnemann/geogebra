@@ -22,7 +22,7 @@ Fortbildung GeoGebra
 - [PDF Download](http://mgje.github.io/geogebra/slides/muenchenstein.html)
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/muenchenstein.html)
 
-### [Gymnasium Oberwil](http://www.gymoberwil.ch/)2015
+### [Gymnasium Oberwil](http://www.gymoberwil.ch/) 2015
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/oberwil.html)
 
 ### [FMS Basel](http://www.fmsbasel.ch/)  28.5.2015
