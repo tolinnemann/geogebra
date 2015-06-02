@@ -13,7 +13,7 @@ Fortbildung GeoGebra
 - [PDF Download](http://mgje.github.io/geogebra/slides/muttenz.pdf)
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/muttenz.html)
 
-### [Wirtschafts Gymnasium](http://www.gymmuenchenstein.ch/)  2015
+### [Wirtschafts Gymnasium](http://www.gymmuenchenstein.ch/)  1.4.2015
 - [PDF Download](http://mgje.github.io/geogebra/slides/wg.pdf)
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/wg.html)
 
