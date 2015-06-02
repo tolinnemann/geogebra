@@ -13,6 +13,23 @@ Fortbildung GeoGebra
 - [PDF Download](http://mgje.github.io/geogebra/slides/muttenz.pdf)
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/muttenz.html)
 
+
+### [FMS Basel](http://www.fmsbasel.ch/)  5.6.2015
+- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/fms-basel.html)
+
+
+
+
+
+### [FMS Basel](http://www.fmsbasel.ch/)  28.5.2015
+- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/fms-basel.html)
+
+### [Gymnasium Leonhard](http://www.gymnasium-leonhard.ch/)  5.6.2015
+- [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/leonhard.html)
+
+
+
+
 ### Über Kommentare und Rückmeldungen freuen wir uns !
 Fragen und Anregungen können direkt ins [Wiki](https://github.com/mgje/geogebra/wiki) eigetragen werden.
 
