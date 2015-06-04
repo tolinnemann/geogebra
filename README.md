@@ -32,7 +32,8 @@ Fortbildung GeoGebra
 - HTML5: [http://mgje.github.io/geogebra/slides/sek_I_baden_mai_2015.html](http://mgje.github.io/geogebra/slides/sek_I_baden_mai_2015.html)
 - PDF Slides: [http://mgje.github.io/geogebra/slides/sek_I_baden_mai_2015.pdf](http://mgje.github.io/geogebra/slides/sek_I_baden_mai_2015.pdf)
 - PDF 2Slides: [http://mgje.github.io/geogebra/slides/sek_I_baden_mai_2015_2slides.pdf](http://mgje.github.io/geogebra/slides/sek_I_baden_mai_2015_2slides.pdf)
-- 
+
+
 ### [Gymnasium Leonhard](http://www.gymnasium-leonhard.ch/)  5.6.2015
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/leonhard.html)
 
