@@ -36,6 +36,7 @@ Fortbildung GeoGebra
 
 ### [Gymnasium Leonhard](http://www.gymnasium-leonhard.ch/)  5.6.2015
 - [Interaktive HTML 5 Präsentation](http://mgje.github.io/geogebra/slides/leonhard.html)
+- [PDF](http://mgje.github.io/geogebra/slides/leonhard.pdf)
 
 
 
