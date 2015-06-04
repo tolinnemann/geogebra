@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>GeoGebra</title>
+
+    <meta name="description" content="TODO">
+    <meta name="author" content="Martin Guggisberg">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="http://mgje.github.io/presentations/reveal2015/css/reveal.min.css">
+    <link rel="stylesheet" href="http://mgje.github.io/presentations/reveal2015/css/theme/mw2.css" id="theme">
+
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="http://mgje.github.io/presentations/reveal2015/lib/css/zenburn.css">
+
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="http://mgje.github.io/presentations/reveal2015/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="http://mgje.github.io/presentations/reveal2015/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+        
+<!-- Einleitung -->
+<section data-markdown data-separator="---" data-separator-vertical="--" data-background="#FFFFFF">
+<script type="text/template">
+### Fortbildung GeoGebra
+<br>
+<p style="background-color:#81BABE">
+![banner](media/banner-geogebra.png)
+</p>
+<br>
+####ICT-Day Baden 05.06.2015
+
+
+<br>
+##### Torsten Linnemann <br>
+#### Pädagogische Hochschule FHNW
+
+
+---
+## Geogebra Institute 
+
+### PH FHNW Schweiz
+
+[http://www.geogebra.org/institutes](http://www.geogebra.org/institutes)
+
+
+![media/institutes.png](media/institutes.png)
+
+---
+
+## Vorstellung; Motivation; Erwartungen
+
+---
+
+## Agenda
+
+- Intro: Ein optimaler Ort für einen Spielplatz
+- GeoGebra im Schuleinsatz
+  - Installation, Arbeit im Browser
+  - Erstellen von Bildern
+  - Geogebratube - Recherche
+- Funktionen
+  - eigenständiges Arbeiten
+- Erforschen und Argumentieren 
+  - in der Geometrie
+  - Binomische Formeln
+- Kopfgeometrie: mathbuch
+- Bonustrack: Piratenaufgabe
+
+---
+
+## Wo ist der beste Ort für einen Spielplatz?
+
+
+![Ausgangslage](media/spielplatz_abb1.png)
+
+<br>
+
+<small>
+Roth-Sonnen Nicole, Leuders, T., Barzel, B., & Hußmann, (2005). Computer, Internet und co im Mathematikunterricht. (S. 190) Berlin: Cornelsen.
+</small>
+---
+### Schülerinnen und Schüler 
+
+###schlüpfen in die Rolle eines Gutachters
+
+
+---
+###Lösung 1: Direkter Weg
+
+<video class="stretch" width="550" height="340" data-autoplay  controls>
+		<source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/spielplatzeuklid.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/spielplatzeuklid.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
+</video>
+
+
+<small>[Link zu GeoGebraTube: Spielplatz_Entfernung](http://www.geogebratube.org/material/show/id/320855) &nbsp;&nbsp; von &nbsp;&nbsp; [Torsten Linnemann](http://www.geogebratube.org/torsten_linnemann)</small>
+---
+###Lösung 2: Eckenhausen, quadratisches Strassennetz
+
+<video class="stretch" width="830" height="360" data-autoplay controls>
+		<source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Eckenhausen.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Eckenhausen.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
+</video>
+
+<small>[Link zu GeoGebraTube: &nbsp; spielplatz_Eckenhausen](http://www.geogebratube.org/material/show/id/320903) &nbsp;&nbsp; von &nbsp;&nbsp; [Torsten Linnemann](http://www.geogebratube.org/torsten_linnemann)</small>
+
+---
+### Schülerinnen und Schüler 
+
+###schlüpfen in die Rolle eines Gutachters
+
+<br>
+
+<ul>
+<li class="fragment" data-fragment-index="1">Möglichst kurzer Weg ?</li>
+<li class="fragment" data-fragment-index="2">Direkt (durch das Gelände) oder einer Strasse nach ? </li>
+<li class="fragment" data-fragment-index="3">Sollen Häuser mit mehr Kindern äquivalent gewichtet werden ?</li>
+<li class="fragment" data-fragment-index="4">Sollen grössere Entfernungen stärker gewichtet werden? </li>
+</ul>
+
+---
+
+Diese Anwendungen und die nächsten Folien in:
+
+http://tube.geogebra.org/student/b740553
+
+---
+
+
+![Aufgabe91](media/aufgabe91.png)
+
+"Wo befindet sich ein Punkt P in einem Dreieck, wenn die Summe aller Abstände von diesem Punkt P zu den drei Ecken minimal sein soll."
+
+<small>[Dorrie, H. (1965). 100 Great problems of elementary mathematics. Dover Publications.](http://cds.cern.ch/record/1551234)</small>
+
+---
+### Optimale Position eines Kraftwerks
+
+
+<video class="stretch" width="798" height="610" data-autoplay controls>
+		<source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
+</video>
+
+
+
+<small>[Link zu GeoGebraTube: Der Neubau des Kraftwerks](http://tube.geogebra.org/student/m81814)&nbsp;&nbsp; von &nbsp;&nbsp; [Ulrich Steinmetz](http://tube.geogebra.org/user/profile/id/34514)</small>
+
+
+---
+### Beweisidee
+
+![geometric solution](media/geometric_solution.png)
+--
+### Geometrischer Beweis
+
+![geometric solution](media/geometric_proof.png)
+
+[Link to Geogebra Material](http://www.geogebratube.org/student/m71061)
+---
+## Wer hat als erstes ein numerisches Lösungsverfahren für n>3 gefunden?
+---
+### Facility Location Problems
+
+### Ein Teilgebiet der kombinatorischen Optimierung 
+
+1966 findet **M. L. Balinksi** eine approximative Lösung des Fermat-Weber Problems für n-Ecken.
+
+****
+<small>
+M. L. Balinksi. On finding integer solutions to linear programs. In Proceedings of the IBM Scientific Computing Symposium on Combinatorial Problems, pages 225–248. IBM, 1966.</small>
+---
+![Andrew_Vazsonyi](media/Andrew_Vazsonyi.png)
+
+```I was sixteen when I became intrigued with the N point 
+problem``` 
+
+***Andrew Vázsonyi, 1932***
+
+Veröffentlicht 1937 in Japan unter dem Namen "Endre Weiszfeld".
+
+---
+Fermat-Punkt für n>3 - Ziehe am grünen Punkt
+
+
+![Fermat-Weber](media/fermatweber7.png)
+
+http://tube.geogebra.org/material/show/id/52934
+
+
+
+
+---
+### Fermat-Punkt bewegt sich auf einem Orbit
+<video width="998" height="712" data-autoplay controls>
+		<source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.webm" type="video/webm" />
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.mp4" type="video/mp4" />
+    
+    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.ogv" type="video/ogg" />
+    Your browser does not support the <code>video</code> element.
+</video>
+
+--
+### FP springt auf innere Punkte
+<video width="854" height="634" data-autoplay controls>
+	  <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.webm" type="video/webm" />
+
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.mp4" type="video/mp4" />
+      
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.ogv" type="video/ogg" />
+    Your browser does not support the <code>video</code> element.
+</video>
+---
+## Wo befindet sich der Mittelpunkt von Europa ?
+---
+<video width="972" height="728" data-autoplay controls>
+
+	  <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.webm" type="video/webm" />
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.mp4" type="video/mp4" />
+      
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.ogv" type="video/ogg" />
+    Your browser does not support the <code>video</code> element.
+</video>
+
+http://tube.geogebra.org/material/show/id/66049
+
+
+
+
+
+---
+
+## Agenda
+
+- Intro: Ein optimaler Ort für einen Spielplatz
+- **GeoGebra im Schuleinsatz**
+  - Installation, Arbeit im Browser
+  - Erstellen von Bildern
+  - Geogebratube - Recherche
+- Funktionen
+  - eigenständiges Arbeiten
+- Erforschen und Argumentieren 
+  - in der Geometrie
+  - Binomische Formeln
+- Kopfgeometrie: mathbuch
+- Bonustrack: Piratenaufgabe
+
+---
+
+
+
+# Geogebra
+- Beginn der Entwicklung: 2001 
+- Markus Hohenwarter, Universität Salzburg
+- Zunächst: 
+  - Algebra 
+  - Geometrie
+- Erweitert durch
+  - Computeralgebrasystem
+  - Tabellenkalkulation
+  - 3d-Geometrie
+  - Statistik
+- Neu auch: Geogebra-Tube: Plattform für Materialien
+- Open Source
+---
+## Funktionalitäten
+
+![Startseite](media/geogebrabrowser.png)
+
+--- 
+## Schuleinsatz
+- Demonstrationsmaterialien für Lehrkraft
+- Erstellen von Bildern, Diagrammen für Lehrkraft
+- Nutzen von Geogebratube durch Lernende
+- Allenfalls Nutzen des Programms durch Lernende
+
+--- 
+
+## Verwendung der Software:
+- Festinstalliert auf Windows, Mac, Linux
+- Festinstalliert mit Prüfungsumgebung
+- Online im Browser: http://web.geogebra.org/app/
+- auf Tablets
+- Bald auch auf Smartphones?
+- Versionen ab 5.0 verwenden
+  
+
+
+---
+## GeoGebra installieren
+
+![Startseite](media/geogebraStart.png)
+
+[http://geogebra.org/](http://geogebra.org/)
+
+---
+
+## Agenda
+
+- Intro: Ein optimaler Ort für einen Spielplatz
+- **GeoGebra im Schuleinsatz**
+  - Installation, Arbeit im Browser
+  - **Erstellen von Bildern**
+  - Geogebratube - Recherche
+- Funktionen
+  - eigenständiges Arbeiten
+- Erforschen und Argumentieren 
+  - in der Geometrie
+  - Binomische Formeln
+- Kopfgeometrie: mathbuch
+- Bonustrack: Piratenaufgabe
+
+
+---
+
+## Export 3D Grafik 
+
+<video width="910" height="742" data-autoplay loop controls>
+		<source data-src="http://mgje.github.io/geogebra/slides/media/movies/copy_paste.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/geogebra/slides/media/movies/copy_paste.m4v" type="video/mp4" />
+        
+        Your browser does not support the <code>video</code> element.
+</video>
+
+
+
+
+---
+
+## GeoGebraTube &rarr;
+## Materialien  finden und nutzen 
+
+[http://tube.geogebra.org/](http://tube.geogebra.org/)
+
+![tube-geogebra.png](media/tube-geogebra.png)
+
+---
+## Beispiel 
+
+Suche nach **ssw** liefert als ersten Hit
+
+https://tube.geogebra.org/student/m403381
+
+---
+
+Verwenden zur Einführung??
+
+Verwenden zum Repetieren!!
+
+
+---
+
+## Finden Sie Materialien auf Geogebratube
+
+## Tauschen Sie sich aus
+
+
+---
+
+## Teilen oder Kopieren
+
+Verwenden der Dateien, verändern der Dateien, Geogebra lernen.
+
+Und schliesslich: selbst Teilen
+
+---
+
+![YouTube](media/youtube.png)
+
+Lernvideos: [YouTube GeoGebra channel](https://www.youtube.com/watch?v=m_v9hKFlOpw) 
+
+
+---
+
+## Agenda
+
+- Intro: Ein optimaler Ort für einen Spielplatz
+- GeoGebra im Schuleinsatz
+  - Installation, Arbeit im Browser
+  - Erstellen von Bildern
+  - Geogebratube - Recherche
+- **Funktionen**
+  - eigenständiges Arbeiten
+- Erforschen und Argumentieren 
+  - in der Geometrie
+  - Binomische Formeln
+- Kopfgeometrie: mathbuch
+- Bonustrack: Piratenaufgabe
+
+
+
+---
+## Graphen von Funktionen
+
+![Funktionslabor](media/Funktionslabor.png)
+
+[Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/317609)
+
+---
+
+## Lineare Funktionen
+
+- [Graph einer linearen Funktion](http://tube.geogebra.org/student/m163667)
+- [Handy Tarife](http://tube.geogebra.org/student/m1144811)
+- [Finde den Schnittpunkt zweier Geraden](http://tube.geogebra.org/student/m570369)
+- [Umfang Quadrat](http://tube.geogebra.org/student/b409833#material/409825)
+
+
+---
+
+## Eigene Arbeit
+
+Laden Sie eine der Dateien herunter und passen Sie Sie nach ihren Bedürfnissen an.
+
+
+---
+
+## Agenda
+
+- Intro: Ein optimaler Ort für einen Spielplatz
+- GeoGebra im Schuleinsatz
+  - Installation, Arbeit im Browser
+  - Erstellen von Bildern
+  - Geogebratube - Recherche
+- Funktionen
+  - eigenständiges Arbeiten
+- **Erforschen und Argumentieren** 
+  - in der Geometrie
+  - Binomische Formeln
+- Kopfgeometrie: mathbuch
+- Bonustrack: Piratenaufgabe
+
+
+
+
+
+
+
+---
+## Ortslinien, Spur: Argumentieren
+<br><br>
+
+- Winkelhalbierende: [http://tube.geogebra.org/student/m320791](http://tube.geogebra.org/student/m320791)
+<br><br>
+
+- Symmetrie: [https://tube.geogebra.org/student/m188567](https://tube.geogebra.org/student/m188567)
+<br><br>
+
+- Gleicher Abstand: [https://tube.geogebra.org/student/m188578](https://tube.geogebra.org/student/m188578)
+<br><br>
+
+- Gleicher Abstand II [https://tube.geogebra.org/student/m188545](https://tube.geogebra.org/student/m188545)
+
+--- 
+## Binomische Formeln
+
+- Binomische Formeln: 
+https://tube.geogebra.org/student/b328019
+
+- Zweite binomische Formel ohne doppelt abgezogene Fläche:
+https://tube.geogebra.org/student/m55929
+
+- Dritte binomische Formel: 
+https://tube.geogebra.org/student/m4718
+
+
+---
+
+## Kopfgeometrie Mathbuch
+
+---
+## Bonustrack Piratenaufgabe
+
+
+---
+
+![Piratenaufgabe](media/Piratenaufgabe.png)
+
+---
+
+![Piratenapplet](media/Piratenapplet.png)
+
+[Link auf GeoGebraTube](http://tube.geogebra.org/material/show/id/268433)
+
+
+
+
+
+
+
+</script>
+</section>
+
+
+
+<!-- THE END -->
+      </div>
+
+    </div>
+
+    <script src="http://mgje.github.io/presentations/reveal2015/lib/js/head.min.js"></script>
+    <script src="http://mgje.github.io/presentations/reveal2015/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        keyboard: true,
+        overview: true,
+        slideNumber: true,
+
+        //width: 1024,
+          //height: 768,
+
+          width: 1440,
+          height: 900,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        //parallaxBackgroundSize: '2100px 900px',
+        parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal
+        dependencies: [
+          { src: 'http://mgje.github.io/presentations/reveal2015/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'http://mgje.github.io/presentations/reveal2015/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'http://mgje.github.io/presentations/reveal2015/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'http://mgje.github.io/presentations/reveal2015/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'http://mgje.github.io/presentations/reveal2015/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'http://mgje.github.io/presentations/reveal2015/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'http://mgje.github.io/presentations/reveal2015/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
