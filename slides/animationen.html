@@ -52,7 +52,7 @@
 <br>
 ##### Martin Guggisberg <br>
 #### Schweizerischer Verein für Informatik in der Ausbildung ([SVIA](http://svia-ssie-ssii.ch/de/))
-#### Pädagogische Hochschule FHNW
+
 
 ---
 ## Geogebra Institute 
@@ -72,13 +72,15 @@
 <br>
 <br>
 
-# TODDO
-
 
 1. Open Source Software Geogebra 
-- Animation - Visualisierung von Zeitschritten
-- 3D Objekte bewegen
-- Simulation 
+- Tutorial I: Animation erstellen
+- Beispiele von GeoGebraTube
+- Tutorial II: Rosenkurven (Rosette)
+- Bonus Track
+	- Piratenaufgabe
+	- Parallax Effekte
+	- Wo ist der beste Ort ... ?
 
 ---
 
@@ -254,7 +256,7 @@ Bewegung eines Massenpunkts
 - Harmonische Schwingung [Link](http://dmentrard.free.fr/GEOGEBRA/Sciences/Physique/Statique/Oscillation.html)
 
 ---
-### Weitere Beispiele
+### Animations Beispiele
 
 * [Kochkurve](http://tube.geogebra.org/m/35989)
 * [Kreisanimation 1](http://tube.geogebra.org/b/72373#material/67729), [Kreisanimation 2](http://tube.geogebra.org/m/67982)
@@ -274,16 +276,115 @@ Bewegung eines Massenpunkts
 ---
 ### Animaiton einer Rose
 
-[Webtutorial](http://mathandmultimedia.com/2010/09/10/geogebra-tutorial-29-animation-roses-radian/)
+![Rose](http://upload.wikimedia.org/wikipedia/commons/a/a1/Foucault_pendulum_animated.gif)
+
+[Web Tutorial (engl)](http://mathandmultimedia.com/2010/09/10/geogebra-tutorial-29-animation-roses-radian/)
 
 
 ---
-## Gelenke animieren
+### Nullpunkt / Zentrum festlegen
+
+* Mit Punktwerkzeug auf den Achssenschnittpunkt klicken
+
+* oder die Koordinaten 
+
+```apache
+(0,0)
+```
+
+in der Eigabezeile eintragen
+
+---
+### Kreis mit Radius 1 um A
+
+Eingabe:
+
+```apache
+Kreis[A, 1]
+```
+
+<br>
+
+
+### Punkt B bei (1,0)
+
+Eingabe: 
+
+```apache
+B = (1,0)
+```
+
 
 ---
 
+Punkt B rotieren um d°
 
-### Repository
+Eingabe: 
+
+```apache
+Drehe[B, d, A]
+```
+
+<br>
+Strecke AB'
+
+Eingabe: 
+
+```apache
+Strecke[A, B']
+```
+
+<br>
+
+zweiter Kreis
+
+
+Eingabe: 
+
+```apache
+Kreis[A, r]
+```
+---
+### Einstellungen Schieberegler anpassen
+
+![rose2](media/rose2.png)
+
+
+<br>
+
+schneiden
+
+
+Eingabe: 
+
+```apache
+Schneide[e, a]
+```
+
+---
+
+### Spur einschalten und Animation Starten
+
+![Rosette3](media/Rosette3.png)
+
+[http://tube.geogebra.org/material/show/id/1333815](http://tube.geogebra.org/material/show/id/1333815)
+
+---
+
+![Rose](media/Rose.png)
+
+$$ r = \cos(\phi \cdot n/d ) $$
+
+[http://tube.geogebra.org/material/show/id/118656](http://tube.geogebra.org/material/show/id/118656)
+
+---
+
+#  Vielen Dank
+
+- Bonus Track
+	- Piratenaufgabe
+	- Parallax Effekte
+	- Wo ist der beste Ort ... ?
 
 ---
 
@@ -341,20 +442,7 @@ P = (t,sin(t))
 
 
 [http://tube.geogebra.org/student/m921873](http://tube.geogebra.org/student/m921873)
----
-### Animieren eines Gitters
 
-1. Gitter erstellen
-2. Gitter koninuierlich drehen
-
----
-
-### Kreise in Kreisen animieren
-
-
-
----
-## Weitere Beispiele
 ---
 ## Zentralprojektion 
 ###& 
@@ -423,35 +511,111 @@ Mechanical creation of a perspective image by Albrecht Dürer
 </section>
 <section  data-markdown data-separator="---" data-separator-vertical="--" data-background="#777777" data-background-transition="slide">
 <script type="text/template">
-# Numerische Experimente
+
+
+## Wo ist der beste Ort für einen Spielplatz?
+
+
+![Ausgangslage](media/spielplatz_abb1.png)
+
+<br>
+
+<small>
+Roth-Sonnen Nicole, Leuders, T., Barzel, B., & Hußmann, (2005). Computer, Internet und co im Mathematikunterricht. (S. 190) Berlin: Cornelsen.
+</small>
+
+
 ---
-### FP bewegt sich auf einem Orbit
-<video width="998" height="712" data-autoplay controls>
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.mp4" type="video/mp4" />
-		<source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.webm" type="video/webm" />
-		<source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.ogv" type="video/ogg" />
-		Your browser does not support the <code>video</code> element.
+###Lösung 1: Direkter Weg
+
+<video class="stretch" width="550" height="340" data-autoplay  controls>
+		<source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/spielplatzeuklid.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/spielplatzeuklid.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
 </video>
 
---
-### FP springt auf innere Punkte
-<video width="854" height="634" data-autoplay controls>
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.mp4" type="video/mp4" />
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.webm" type="video/webm" />
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/snaptopoint.ogv" type="video/ogg" />
-		Your browser does not support the <code>video</code> element.
+
+<small>[Link zu GeoGebraTube: Spielplatz_Entfernung](http://www.geogebratube.org/material/show/id/320855) &nbsp;&nbsp; von &nbsp;&nbsp; [Torsten Linnemann](http://www.geogebratube.org/torsten_linnemann)</small>
+---
+###Lösung 2: Eckenhausen, quadratisches Strassennetz
+
+<video class="stretch" width="830" height="360" data-autoplay controls>
+		<source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Eckenhausen.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Eckenhausen.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
 </video>
+
+<small>[Link zu GeoGebraTube: &nbsp; spielplatz_Eckenhausen](http://www.geogebratube.org/material/show/id/320903) &nbsp;&nbsp; von &nbsp;&nbsp; [Torsten Linnemann](http://www.geogebratube.org/torsten_linnemann)</small>
+
+
+
+
+---
+
+
+![Aufgabe91](media/aufgabe91.png)
+
+"Wo befindet sich ein Punkt P in einem Dreieck, wenn die Summe aller Abstände von diesem Punkt P zu den drei Ecken minimal sein soll."
+
+<small>[Dorrie, H. (1965). 100 Great problems of elementary mathematics. Dover Publications.](http://cds.cern.ch/record/1551234)</small>
+
+---
+### Optimale Position eines Kraftwerks
+
+
+<video class="stretch" width="798" height="610" data-autoplay controls>
+		<source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.webm" type="video/webm" />
+        <source data-src="http://mgje.github.io/presentations/GDM2015/media/movies/Kraftwerk.m4v" type="video/mp4" />
+    
+    Your browser does not support the <code>video</code> element.
+</video>
+
+
+
+<small>[Link zu GeoGebraTube: Der Neubau des Kraftwerks](http://tube.geogebra.org/student/m81814)&nbsp;&nbsp; von &nbsp;&nbsp; [Ulrich Steinmetz](http://tube.geogebra.org/user/profile/id/34514)</small>
+
+---
+
+Fermat-Punkt für n>3 - Ziehe am grünen Punkt
+
+
+![Fermat-Weber](media/fermatweber7.png)
+
+http://tube.geogebra.org/material/show/id/52934
+
+
+
+
+---
+### Fermat-Punkt bewegt sich auf einem Orbit
+<video width="998" height="712" data-autoplay controls>
+		<source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.webm" type="video/webm" />
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.mp4" type="video/mp4" />
+    
+    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/orbit.ogv" type="video/ogg" />
+    Your browser does not support the <code>video</code> element.
+</video>
+
 ---
 ## Wo befindet sich der Mittelpunkt von Europa ?
 ---
 <video width="972" height="728" data-autoplay controls>
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.mp4" type="video/mp4" />
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.webm" type="video/webm" />
-	    <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.ogv" type="video/ogg" />
-		Your browser does not support the <code>video</code> element.
+
+	  <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.webm" type="video/webm" />
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.mp4" type="video/mp4" />
+      
+      <source data-src="http://mgje.github.io/presentations/Budapest2014/media/movies/europefp.ogv" type="video/ogg" />
+    Your browser does not support the <code>video</code> element.
 </video>
 
-[Link GeoGebraTube](http://tube.geogebra.org/material/show/id/66049)
+http://tube.geogebra.org/material/show/id/66049
+
+
+
+
+
 
 </script>
 </section>
