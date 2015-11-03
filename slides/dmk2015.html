@@ -189,12 +189,52 @@ $$ j(x) = -f(-x) $$
 ---
 ### Parametrisierung einer Funktion
 
+![sinpara](media/sinpara.png)
+
 [Link auf GeoGebraTube](https://tube.geogebra.org/material/simple/id/50132)
 
 ---
 ### Funktionslupe
 
 
+![Funktionslabor](media/Funktionslabor.png)
+
+[Link auf GeoGebraTube](http://www.geogebratube.org/material/show/id/317609)
+
+---
+
+### Funktionen unter der Lupe
+
+<small>H.-J. Eschenbroich </small>
+
+[http://tube.geogebra.org/material/show/id/411519](http://tube.geogebra.org/material/show/id/411519)
+
+![Steigung_mit_FunktionenLupe](media/Steigung_mit_FunktionenLupe.png)
+---
+
+### Punkt auf Funktion
+
+1. Beweglicher Punkt auf der x-Achse
+- entsprechender Punkt auf einer Funktion
+
+
+```apache
+f(x) =x^2*sin(x^2)
+X_0 =Punkt[y=0]
+P =(x(X_0),f(x(X_0)))
+```
+
+
+[Punkt auf dem Graphen einer Funktion](http://tube.geogebra.org/student/m1252497)
+
+
+---
+### Dynamik - Wie bewegt sich ein Punkt auf einer Kurve?
+
+
+![dynamik](media/dynamikplt.png)
+
+[Link auf GeoGebraTube](https://tube.geogebra.org/material/simple/id/1252497)
 
 ---
 ### Stückweise definierte Funktionen
@@ -204,17 +244,27 @@ $$ j(x) = -f(-x) $$
 [Link auf GeoGebraTube](https://tube.geogebra.org/material/simple/id/1150063)
 
 ---
-### Kurvenschar - Folgen von Funktionen
+### Kurvenschar - Folge von Funktionen
+
+```apache
+
+f=Folge[(1/i) sin(x i),i,1,N]
+
+```
+
+![Kurvenschar](media/kurvenschar.png)
+
+[Link auf GeoGebraTube](https://tube.geogebra.org/material/simple/id/318219)
 
 ---
 ### Funktionsreihen - z.B. Fourier
 
 
+![FourrierBsp](media/fourierbsp.png)
 
----
-### Dynamik - Wie bewegt sich ein Punkt auf einer Kurve?
+[Link auf GeoGebraTube](http://tube.geogebra.org/material/simple/id/63395)
 
-[Link auf GeoGebraTube](https://tube.geogebra.org/material/simple/id/1252497)
+
 
 
 ---
@@ -252,7 +302,6 @@ GeoGebra Anwendungen selbständig erproben und weitere Beispiele in GeoGebraTube
 <br><br>
 * Regression [B1](http://tube.geogebra.org/material/show/id/108888) [B2](http://tube.geogebra.org/student/b154316) [B3](http://tube.geogebra.org/material/show/id/112292)
 
----
 
 
 
@@ -428,106 +477,6 @@ LöseDgl[f, x(A), y(A), 20, 0.1]
 
 ---
 
-## DGL 2. Ordnung
-
-<br>
-
-### Schwingung
-
---
-
-### Newton II
-
-### &nbsp;
-
-\\(  \vec{F}(t) = m \cdot \vec{a}(t) \\)
-
-### &nbsp;
-
-
-### Federpendel
-
-### &nbsp;
-
-\\(  -k \vec{x}(t) = m \cdot \ddot{\vec{x}}(t) \\)
-
-
-\\(   \ddot{\vec{x}}(t)   =  - \frac{k}{m} \cdot \vec{x}(t) \\)
-
-\\(   \ddot{\vec{x}}(t)   =  - \omega^2 \cdot \vec{x}(t) \\)
-
---
-
-Annahme einer Lösung: 
-
-\\( \vec{x}(t) = e ^{\lambda \cdot t} \\)
-
-\\( \ddot{\vec{x}}(t) = \lambda^2 \cdot e ^{\lambda \cdot t} \\)
-
-einsetzen in DGl
-
-\\( \lambda^2 \cdot e ^{\lambda \cdot t} = - \omega^2 \cdot e ^{\lambda \cdot t} \\)
-
-\\( (\lambda^2 + \omega^2) \cdot e ^{\lambda \cdot t} = 0 \\)
-
-folglich
-
-\\( (\lambda^2 + \omega^2) = 0\\)
-
-\\( \lambda = i \omega \mbox{ oder } \lambda = -i \omega \\)
-
-allg. Lösung:
-
-\\( \vec{x}(t) = \vec{x}\_1(t) + \vec{x}\_2(t) = \frac{c\_1}{e^{i \omega t}}+ c\_2 \cdot e^{i \omega t} \\)
-
-\\( \vec{x}(t) = c\_1 \cdot \cos(\omega t) + c\_2 \cdot \sin(\omega t) \\)
-
----
-
-### Federpendel
-
-[http://tube.geogebra.org/material/show/id/126500](http://tube.geogebra.org/material/show/id/126500)
-
-![federpendel](media/federpendel.png)
-
----
-### gedämpftes Federpendel
-
-![federpendel_daempfung](media/federpendel_daempfung.png)
-
---
-
-### DGL für ein gedämpfte Federpendel
-
-![fadenpendeldaempfung2](media/fadenpendeldaempfung2.png)
-
-
---
-
-### Lagrange Formalismus für das Fadenpendel 
-
-\\(   m l^2 \ddot{\phi}(t) + mgl \sin(\phi)   =  0 \\)
-
-  nur numerisch lösbar !!!
-
----
-
-### Fadenpendel Simulation
-
-[http://tube.geogebra.org/material/show/id/702](http://tube.geogebra.org/material/show/id/702)
-
-
-![fadenpendel](media/fadenpendel.png)
-
----
-### Numerische Lösung  einer DGL 2. Ordnung
-
-
-[http://tube.geogebra.org/material/show/id/79803](http://tube.geogebra.org/material/show/id/79803)
-
-![dgl2](media/dgl2.png)
-
----
 
 
 ### GeoGebra
